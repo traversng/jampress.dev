@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Base from '../layouts/Base'
 import { Button } from 'theme-ui'
 import Card from '../components/Card'
@@ -38,15 +39,13 @@ export default function Home() {
 
             <Card />
 
-            <a
-              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className="card"
-            >
-              <h3>Deploy &rarr;</h3>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
+            <Link href="/grid">
+              <a>
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  tailwind Grid Example
+                </button>
+              </a>
+            </Link>
           </div>
         </main>
 

@@ -1,5 +1,7 @@
+import { tailwind } from "@theme-ui/presets";
 // example theme.js
-module.exports = {
+export default {
+  ...tailwind,
   fonts: {
     body: 'system-ui, sans-serif',
     heading: '"Avenir Next", sans-serif',
