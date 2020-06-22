@@ -1,7 +1,10 @@
 import Head from 'next/head'
+import Base from '../layouts/Base'
+import { Button } from "theme-ui";
 
 export default function Home() {
   return (
+    <Base>
     <div className="container">
       <Head>
         <title>Typescript Starter</title>
@@ -18,10 +21,9 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <Button>
+          Theme-button
+        </Button>
 
           <a href="https://nextjs.org/learn" className="card">
             <h3>Learn &rarr;</h3>
@@ -205,5 +207,6 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+    </Base>
+      )
 }
