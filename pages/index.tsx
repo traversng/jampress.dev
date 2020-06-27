@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import { Button } from 'theme-ui'
 import Base from '../layouts/Base'
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'
