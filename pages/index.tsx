@@ -17,12 +17,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <link
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
         rel="stylesheet"
       />
       <div
         className="leading-normal tracking-normal text-white gradient"
-        style={{ fontFamily: `'Source Sans Pro', sans-serif` }}
+        style={{
+          fontFamily: `'Source Sans Pro', sans-serif`,
+        }}
       >
         {/* Nav */}
         <Nav />
@@ -91,7 +93,8 @@ export default function Home() {
                     Planning
                   </h3>
                   <p className="text-gray-600 mb-8">
-                  Scope and plan your modern website. Your site will have the highest performance and give you a competitive edge
+                    Scope and plan your modern website. Your site will have the
+                    highest performance and give you a competitive edge
                   </p>
                 </div>
               </div>
@@ -158,7 +161,8 @@ export default function Home() {
                     Just like Wordpress
                   </div>
                   <p className="text-gray-800 text-base px-6 mb-5">
-                    You can edit content just like Wordpress, but without the compromises of it.
+                    You can edit content just like Wordpress, but without the
+                    compromises of it.
                   </p>
                 </a>
               </div>
@@ -318,9 +322,7 @@ export default function Home() {
             <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
 
-          <h3 className="my-4 text-3xl leading-tight">
-            Help us help you!
-          </h3>
+          <h3 className="my-4 text-3xl leading-tight">Help us help you!</h3>
 
           <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">
             Book Us
