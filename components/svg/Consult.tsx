@@ -875,7 +875,7 @@ export default function () {
         transform="translate(-22.2 -101.19)"
         fill="none"
         stroke="#000"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
         opacity="0.1"
       />
       <path
@@ -883,7 +883,7 @@ export default function () {
         transform="translate(-22.2 -101.19)"
         fill="none"
         stroke="#000"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
         opacity="0.1"
       />
       <path

@@ -131,8 +131,8 @@ export default function () {
         y2="537"
         fill="none"
         stroke="#00b0ff"
-        stroke-miterlimit="10"
-        stroke-width="4"
+        strokeMiterlimit="10"
+        strokeWidth="4"
       />
       <circle
         cx="332.54207"
@@ -140,8 +140,8 @@ export default function () {
         r="14.75556"
         fill="none"
         stroke="#3f3d56"
-        stroke-miterlimit="10"
-        stroke-width="2"
+        strokeMiterlimit="10"
+        strokeWidth="2"
       />
       <circle cx="416.54207" cy="370.352" r="14.75556" fill="#3f3d56" />
       <circle cx="168.22291" cy="331.16552" r="42.77709" fill="#f2f2f2" />

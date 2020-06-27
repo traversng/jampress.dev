@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Base from '../layouts/Base'
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
@@ -9,7 +8,7 @@ import DevelopSVG from '../components/svg/DevelopSVG'
 
 export default function Home() {
   return (
-    <Base>
+    <div>
       <Head>
         <title>Jampress</title>
         <link rel="icon" href="/favicon.ico" />
@@ -329,8 +328,6 @@ export default function Home() {
 
         <Footer />
       </div>
-      {/* Define your gradient here - use online tools to find a gradient matching your branding */}
-      ;
       <style jsx>
         {`
           .gradient {
@@ -338,6 +335,6 @@ export default function Home() {
             background: linear-gradient(90deg, rgba(0,37,226,1) 0%, rgba(0,176,255,1) 50%, rgba(187,205,255,1) 100%);
         `}
       </style>
-    </Base>
+    </div>
   )
 }

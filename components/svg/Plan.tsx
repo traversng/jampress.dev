@@ -17,9 +17,9 @@ export default function () {
           y2="275.77695"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="gray" stop-opacity="0.25" />
-          <stop offset="0.53514" stop-color="gray" stop-opacity="0.12" />
-          <stop offset="1" stop-color="gray" stop-opacity="0.1" />
+          <stop offset="0" stopColor="gray" stopOpacity="0.25" />
+          <stop offset="0.53514" stopColor="gray" stopOpacity="0.12" />
+          <stop offset="1" stopColor="gray" stopOpacity="0.1" />
         </linearGradient>
         <linearGradient
           id="a8a26417-897b-4824-ba24-124e6df23ee1"
