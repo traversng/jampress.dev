@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <link
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
-        rel="stylesheet"
+        rel="preload"
       />
       <div
         className="leading-normal tracking-normal text-white gradient"
