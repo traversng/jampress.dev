@@ -13,7 +13,7 @@ function Home({ pages }: InferGetStaticPropsType<typeof getStaticProps>) {
       <Head>
         <title>Deep Six</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="deepsix website consultancy" />
+        <meta name="description" content="deepsix website consultancy" />
       </Head>
       <link
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
