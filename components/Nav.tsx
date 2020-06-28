@@ -1,19 +1,24 @@
 import Link from 'next/link'
-import LightningSVG from '../components/svg/Lightning'
+import LightningSVG from './svg/LightningSVG'
+import ContactLink from '../components/ContactLink'
+import PulseSVG from '../components/svg/PulseSVG'
+
 
 function Nav({ pages }) {
   console.log('Nav -> pages', pages)
 
   return (
-    <nav id="header" className="fixed w-full z-30 top-0 text-white bg-black gradient">
+    <nav
+      id="header"
+      className="fixed w-full z-30 top-0 text-white bg-black gradient"
+    >
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <a
             className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             href="#"
           >
-            <LightningSVG />{' '}
-            Deep Six
+            <LightningSVG /> Deep Six
           </a>
         </div>
 
@@ -53,12 +58,7 @@ function Nav({ pages }) {
             </li>
           </ul>
         </div> */}
-        <button
-          id="navAction"
-          className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-3 px-8 shadow"
-        >
-          Contact
-        </button>
+          {/* <ContactLink classes='mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-3 px-8 shadow'/> */}
       </div>
 
       <hr className="border-b border-gray-100 opacity-25 my-0 py-0" />

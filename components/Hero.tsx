@@ -1,4 +1,5 @@
-import SpeedTest from '../components/svg/SpeedTest'
+import ContactLink from '../components/ContactLink'
+import SpeedTest from './svg/SpeedTestSVG'
 
 export default function () {
   return (
@@ -16,13 +17,11 @@ export default function () {
             Fast, Mobile First, SEO Optimized
           </p>
 
-          <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">
-            Subscribe
-          </button>
+          <ContactLink text="Contact" classes="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" />
         </div>
         {/* <!--Right Col--> */}
         <div className="w-full md:w-3/5 py-6 text-center">
-          <SpeedTest/>
+          <SpeedTest />
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ export default function () {
   return (
     <svg
       id="e9543dae-de41-418f-9290-24abb7460ee9"
-      className="w-full md:w-4/5 z-50"
+      className="w-full sm:w-1/2 p-6"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1012 794"

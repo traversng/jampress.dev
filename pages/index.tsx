@@ -3,13 +3,16 @@ import { InferGetStaticPropsType } from 'next'
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-import Consult from '../components/svg/Consult'
-import Plan from '../components/svg/Plan'
-import DevelopSVG from '../components/svg/DevelopSVG'
+import ContactForm from '../components/ContactForm'
+import Consult from '../components/svg/ConsultSVG'
+import WebSearchSVG from '../components/svg/WebSearchSVG'
+import MeditateSVG from '../components/svg/MeditateSVG'
+import SpeedTestSVG from '../components/svg/SpeedTestSVG'
+import ContactLink from '../components/ContactLink'
 
 function Home({ pages }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <Head>
         <title>Deep Six</title>
         <link rel="icon" href="/favicon.ico" />
@@ -74,7 +77,7 @@ function Home({ pages }: InferGetStaticPropsType<typeof getStaticProps>) {
 
             <div className="w-5/6 sm:w-1/2 p-6">
               <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Speed and Performance
+                Performance
               </h3>
               <p className="text-gray-600 mb-8">
                 We use the latest technologies to ensure you have the highest
@@ -83,7 +86,7 @@ function Home({ pages }: InferGetStaticPropsType<typeof getStaticProps>) {
             </div>
             <div className="w-5/6 sm:w-1/2 p-6">
               <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                SEO Optimized
+                SEO
               </h3>
               <p className="text-gray-600 mb-8">
                 When you ditch the older technologies, you can take advantage of
@@ -91,70 +94,95 @@ function Home({ pages }: InferGetStaticPropsType<typeof getStaticProps>) {
                 social media posts!
               </p>
             </div>
-            {/* <Consult /> */}
+            <div className="w-5/6 sm:w-1/2 p-6">
+              <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                Reliable
+              </h3>
+              <p className="text-gray-600 mb-8">
+                No servers needed. Eliminate server hacks and crashes.
+              </p>
+            <ContactLink classes="mx-auto lg:mx-0 hover:underline gradient text-white bg-black font-bold rounded-full my-6 py-4 px-8 shadow-lg" />
+            </div>
           </div>
         </section>
 
         <section className="bg-white border-b py-8">
           <div className="container max-w-5xl mx-auto m-8">
             <h1 className="w-full px-6 my-2 text-5xl font-bold leading-tight text-gray-800">
-              The Process
+              How we do it
             </h1>
             <div className="w-full px-6 mb-4">
               <div className="h-1 gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
 
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap md:my-12">
               <div className="w-5/6 sm:w-1/2 p-6">
                 <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                  Consult
+                  Performance First
                 </h3>
                 <p className="text-gray-600 mb-8">
-                  Audit on existing site or discuss your new project. Well take
-                  a look at your current websites performance and look for areas
-                  that need to improve. If starting a new site, well recommend
-                  the best solution for your business.
+                  We build mobile first sites to the highest performance
+                  standards, using the latest cutting edge technologies.
                 </p>
               </div>
-              <Consult />
+              <SpeedTestSVG />
             </div>
 
-            <div className="flex flex-wrap flex-col-reverse sm:flex-row">
-              <Plan />
+            <div className="flex flex-wrap flex-col-reverse sm:flex-row md:my-12">
+              <WebSearchSVG />
               <div className="w-full sm:w-1/2 p-6 mt-6">
                 <div className="align-middle">
                   <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                    Planning
+                    SEO
                   </h3>
                   <p className="text-gray-600 mb-8">
-                    Scope and plan your modern website. Your site will have the
-                    highest performance and give you a competitive edge.
+                    SEO is no mystery. Google tells us how to improve our
+                    rankings through providing good relevant content. The
+                    challenge is ensuring we are telling google about our
+                    content.
+                  </p>
+                  <p className="text-gray-600 mb-8">
+                    Performance is also a key factor in your SEO strategy. Did
+                    you know that Google penalizes slow websites? We ensure that
+                    all pages load as fast as possible and tell Google
+                    everything about them. This ensures that you are doing
+                    everything possible to rank higher.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap md:my-12">
               <div className="w-5/6 sm:w-1/2 p-6">
                 <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                  Develop
+                  Reliability
                 </h3>
                 <p className="text-gray-600 mb-8">
-                  Development starts and you are actively involved during the
-                  process.
+                  Using the latest technologies, we ensure that your site will
+                  be available throughout the world. Because we are not limited
+                  by the old methods of developing, we can take advantage of the
+                  cloud.
+                </p>
+                <p className="text-gray-600 mb-8">
+                  Users requesting your site in Austin, Texas means it will be
+                  served at the closest server to them in Austin, Texas.
+                </p>
+                <p className="text-gray-600 mb-8">
+                  We also eliminate server hacks and crashes which means less
+                  headache and more uptime for your business.
                 </p>
               </div>
-              <DevelopSVG />
+              <MeditateSVG />
             </div>
           </div>
         </section>
 
         <section className="bg-white border-b py-8">
           <div className="container mx-auto flex flex-wrap pt-4 pb-12">
-            <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+            <h1 className="w-full my-2 px-6 md:text-center text-5xl font-bold leading-tight text-gray-800">
               Ongoing Support
             </h1>
-            <div className="w-full mb-4">
-              <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            <div className="w-full mb-4 px-6">
+              <div className="h-1 md:mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
 
             <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
@@ -164,10 +192,10 @@ function Home({ pages }: InferGetStaticPropsType<typeof getStaticProps>) {
                   className="flex flex-wrap no-underline hover:no-underline"
                 >
                   <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                    Updates
+                    We keep your tech stack up to date
                   </p>
                   <div className="w-full font-bold text-xl text-gray-800 px-6">
-                    We keep your tech stack up to date
+                    Updates
                   </div>
                   <p className="text-gray-800 text-base px-6 mb-5">
                     Technologies change and so does the browser
@@ -190,23 +218,17 @@ function Home({ pages }: InferGetStaticPropsType<typeof getStaticProps>) {
                   className="flex flex-wrap no-underline hover:no-underline"
                 >
                   <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                    Content changes
+                    Just like Wordpress
                   </p>
                   <div className="w-full font-bold text-xl text-gray-800 px-6">
-                    Just like Wordpress
+                    Content changes
                   </div>
                   <p className="text-gray-800 text-base px-6 mb-5">
-                    You can edit content just like Wordpress, but without the
-                    compromises of it.
+                    You can edit content just like Wordpress or other
+                    traditional website builders, but without the baggage that
+                    comes along.
                   </p>
                 </a>
-              </div>
-              <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                <div className="flex items-center justify-center">
-                  <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">
-                    Learn How
-                  </button>
-                </div>
               </div>
             </div>
 
@@ -217,10 +239,10 @@ function Home({ pages }: InferGetStaticPropsType<typeof getStaticProps>) {
                   className="flex flex-wrap no-underline hover:no-underline"
                 >
                   <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                    Bug fixes
+                    They happen
                   </p>
                   <div className="w-full font-bold text-xl text-gray-800 px-6">
-                    They happen
+                    Bug fixes
                   </div>
                   <p className="text-gray-800 text-base px-6 mb-5">
                     Get around the clock support on bug fixes
@@ -265,19 +287,8 @@ function Home({ pages }: InferGetStaticPropsType<typeof getStaticProps>) {
           </g>
         </svg>
 
-        <section className="container mx-auto text-center py-6 mb-12">
-          <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-            Book Us
-          </h1>
-          <div className="w-full mb-4">
-            <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-          </div>
-
-          <h3 className="my-4 text-3xl leading-tight">Help us help you!</h3>
-
-          <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">
-            Book Us
-          </button>
+        <section className="container px-6 mx-auto text-center py-6 mb-12">
+          <ContactForm />
         </section>
 
         <Footer />
