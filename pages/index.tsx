@@ -9,10 +9,11 @@ import DevelopSVG from '../components/svg/DevelopSVG'
 
 function Home({ pages }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div>
+    <html lang='en'>
       <Head>
         <title>Deep Six</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="deepsix website consultancy" />
       </Head>
       <link
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
@@ -288,7 +289,7 @@ function Home({ pages }: InferGetStaticPropsType<typeof getStaticProps>) {
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(92,92,92,1) 50%, rgba(129,129,129,1) 100%);
         `}
       </style>
-    </div>
+    </html>
   )
 }
 
